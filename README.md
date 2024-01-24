@@ -34,3 +34,17 @@ At a high level, we'll walk through the following flow:
         * SSD with at least 10GB free space
     6. Network
         * 8 MBit/sec broadband
+
+2. Validator
+    #### Benefits
+    Lets you stake ETH, propose + validate blocks, earn staking rewards + transaction fee tips.
+    #### Requirements
+    1. Everything above, plus...
+    2. Software
+        * Validator client, browser-based crypto wallet
+    3. Hardware 
+        * A new machine that has never been connected to the internet that you can use to securely generate your mnemonic phrase and keypair
+    4. CPU
+        * 32 ETH
+
+
