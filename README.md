@@ -1,6 +1,6 @@
 # Run a proof of stake node using geth and Prysm
 
-### configuration:
+### Configuration:
 Operating system: Linux \
 Network: Private \
 Execution client: Geth \
@@ -18,19 +18,19 @@ At a high level, we'll walk through the following flow:
 
 ### Review prerequisites and best practices:
 #### Type
-Execution + Beacon
-#### Benefits
-Contributes to the security of the ecosystem. Lets you access the network directly without having to trust a third party service.
-#### Requirements
-1. Software
-    * Execution node client, beacon node client 
-2. OS 
-    * 64-bit Linux
-3. CPU
-    * 4+ cores @ 2.8+ GHz
-4. Memory
-    * 4GB+ RAM
-5. Storage
-    * SSD with at least 10GB free space
-6. Network
-    * 8 MBit/sec broadband
+1. Execution + Beacon
+    #### Benefits
+    Contributes to the security of the ecosystem. Lets you access the network directly without having to trust a third party service.
+    #### Requirements
+    1. Software
+        * Execution node client, beacon node client 
+    2. OS 
+        * 64-bit Linux
+    3. CPU
+        * 4+ cores @ 2.8+ GHz
+    4. Memory
+        * 4GB+ RAM
+    5. Storage
+        * SSD with at least 10GB free space
+    6. Network
+        * 8 MBit/sec broadband
