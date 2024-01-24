@@ -47,7 +47,13 @@ At a high level, we'll walk through the following flow:
     4. 32 ETH
 
 ### Install Prysm
-
+```
+    git clone https://github.com/prysmaticlabs/prysm && cd prysm
+    go build -o=../beacon-chain ./cmd/beacon-chain
+    go build -o=../validator ./cmd/validator
+    go build -o=../prysmctl ./cmd/prysmctl
+    cd ..
+```
 
 ### Generate JWT Secret
 ``` openssl rand -hex 32 | tr -d "\n" > "jwt.hex" ```
