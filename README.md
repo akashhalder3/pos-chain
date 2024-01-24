@@ -44,7 +44,12 @@ At a high level, we'll walk through the following flow:
         * Validator client, browser-based crypto wallet
     3. Hardware 
         * A new machine that has never been connected to the internet that you can use to securely generate your mnemonic phrase and keypair
-    4. CPU
-        * 32 ETH
+    4. 32 ETH
+
+### Install Prysm
+
+
+### Generate JWT Secret
+``` openssl rand -hex 32 | tr -d "\n" > "jwt.hex" ```
 
 
