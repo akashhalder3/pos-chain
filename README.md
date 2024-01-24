@@ -1,10 +1,10 @@
-# Run a node and (optionally) stake ETH using Prysm
+# Run a proof of stake node using geth and Prysm
 
 ### configuration:
-Operating system: Linux
-Network: Private
-Execution client: Geth
-EN-BN connection: HTTP-JWT
+Operating system: Linux \
+Network: Private \
+Execution client: Geth \
+EN-BN connection: HTTP-JWT \
 
 ### Introduction:
 
