@@ -46,6 +46,20 @@ At a high level, we'll walk through the following flow:
         * A new machine that has never been connected to the internet that you can use to securely generate your mnemonic phrase and keypair
     4. 32 ETH
 
+## Install GCC compiler
+```
+    sudo apt update
+    sudo apt install build-essential
+```
+
+### Go Installation
+```
+    sudo rm -rf /usr/local/go && wget https://go.dev/dl/go1.21.6.linux-amd64.tar.gz
+    sudo tar -C /usr/local -xzf go1.21.6.linux-amd64.tar.gz
+    export PATH=$PATH:/usr/local/go/bin
+    go version
+```
+
 ### Install Prysm
 ```
     git clone https://github.com/prysmaticlabs/prysm && cd prysm
@@ -55,7 +69,20 @@ At a high level, we'll walk through the following flow:
     cd ..
 ```
 
-### Generate JWT Secret
-``` openssl rand -hex 32 | tr -d "\n" > "jwt.hex" ```
+### Install Geth
+
+### Clone the repo
+```
+    git clone https://github.com/akashhalder3/pos-chain.git && cd pos-chain
+```
+
+### Create JWT secret
+```
+    
+```
+
+
+
+
 
 
