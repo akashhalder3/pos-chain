@@ -1,0 +1,17 @@
+[Unit]
+Description=pos-validator
+After=syslog.target network.target
+
+[Service]
+User=azureuser
+Group=azureuser
+Type=simple
+ExecStart=/home/azureuser/pos-chain/validator --beacon-rpc-provider=0.0.0.0:4000 --datadir=/home/azureuser/pos-chain/consensus/validatordata --accept-terms-of-use --interop-num-validators=64 --interop-start-index=0 --chain-config-file=/home/azureuser/pos-chain/consensus/config.yml --force-clear-db
+KillMode=process
+KillSignal=SIGINT
+TimeoutStopSec=90
+Restart=on-failure
+RestartSec=10s
+
+[Install]
+WantedBy=multi-user.target

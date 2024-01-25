@@ -76,9 +76,20 @@ At a high level, we'll walk through the following flow:
     git clone https://github.com/akashhalder3/pos-chain.git && cd pos-chain
 ```
 
-### Create JWT secret
+### Service files command
 ```
-    
+    sudo systemctl daemon-reload
+    sudo systemctl start beacon-chain.service
+    sudo journalctl -u beacon-chain.service -f
+    sudo systemctl stop beacon-chain.service
+
+    sudo systemctl start pos-geth.service
+    sudo journalctl -u pos-geth.service -f
+    sudo systemctl stop pos-geth.service
+
+    sudo systemctl start pos-validator.service
+    sudo journalctl -u pos-validator.service -f
+    sudo systemctl stop pos-validator.service
 ```
 
 
