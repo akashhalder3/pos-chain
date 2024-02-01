@@ -6,7 +6,7 @@ After=syslog.target network.target
 User=azureuser
 Group=azureuser
 Type=simple
-ExecStart=/home/azureuser/pos-chain/beacon-chain --datadir=/home/azureuser/pos-chain/consensus/beacondata --min-sync-peers=0 --genesis-state=/home/azureuser/pos-chain/consensus/genesis.ssz --bootstrap-node= --interop-eth1data-votes --chain-config-file=/home/azureuser/pos-chain/consensus/config.yml --contract-deployment-block=0 --chain-id=1337 --rpc-host=0.0.0.0 --grpc-gateway-host=0.0.0.0 --execution-endpoint=http://0.0.0.0:8551 --accept-terms-of-use --jwt-secret=/home/azureuser/pos-chain/execution/jwtsecret --suggested-fee-recipient=0x123463a4b065722e99115d6c222f267d9cabb524 --minimum-peers-per-subnet=0 --enable-debug-rpc-endpoints --force-clear-db
+ExecStart=/home/azureuser/pos-chain/beacon-chain --datadir=/home/azureuser/pos-chain/consensus/beacondata --min-sync-peers=0 --genesis-state=/home/azureuser/pos-chain/consensus/genesis.ssz --bootstrap-node= --interop-eth1data-votes --chain-config-file=/home/azureuser/pos-chain/consensus/config.yml --contract-deployment-block=0 --chain-id=1337 --rpc-host=0.0.0.0 --grpc-gateway-host=0.0.0.0 --execution-endpoint=http://0.0.0.0:8551 --p2p-host-ip=4.240.105.79 --accept-terms-of-use --jwt-secret=/home/azureuser/pos-chain/execution/jwtsecret --suggested-fee-recipient=0x123463a4b065722e99115d6c222f267d9cabb524 --minimum-peers-per-subnet=0 --enable-debug-rpc-endpoints --force-clear-db
 KillMode=process
 KillSignal=SIGINT
 TimeoutStopSec=90

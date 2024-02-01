@@ -76,6 +76,18 @@ At a high level, we'll walk through the following flow:
     git clone https://github.com/akashhalder3/pos-chain.git && cd pos-chain
 ```
 
+### We want to start our nodes before the gensis time of the chain
+
+```
+    /home/azureuser/pos-chain/prysmctl testnet generate-genesis --fork=capella --num-validators=64 --genesis-time-delay=15 --output-ssz=./consensus/genesis.ssz --chain-config-file=./consensus/config.yml --geth-genesis-json-in=./execution/genesis.json --geth-genesis-json-out=./execution/genesis.json
+```
+
+### we will initialize the genesis state of go-ethereum by running go-ethereum
+
+```
+/home/azureuser/pos-chain/geth --datadir=./execution init ./execution/genesis.json
+```
+
 ### Service files command
 ```
     sudo systemctl daemon-reload
@@ -92,7 +104,12 @@ At a high level, we'll walk through the following flow:
     sudo systemctl stop pos-validator.service
 ```
 
+sudo systemctl restart beacon-chain.service
+sudo systemctl restart pos-geth.service
+sudo systemctl restart pos-validator.service
 
+
+curl localhost:8080/p2p
 
 
 

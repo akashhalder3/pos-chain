@@ -6,7 +6,7 @@ After=syslog.target network.target
 User=azureuser
 Group=azureuser
 Type=simple
-ExecStart=/home/azureuser/pos-chain/geth --http --http.api=eth,net,web3 --http.addr=0.0.0.0 --http.corsdomain=* --ws --ws.api=eth,net,web3 --ws.addr=0.0.0.0 --ws.origins=* --authrpc.vhosts=* --authrpc.addr=0.0.0.0 --authrpc.jwtsecret=/home/azureuser/pos-chain/execution/jwtsecret --datadir=/home/azureuser/pos-chain/execution --allow-insecure-unlock --unlock=0x123463a4b065722e99115d6c222f267d9cabb524 --password=/home/azureuser/pos-chain/execution/geth_password.txt --nodiscover --syncmode=full
+ExecStart=/home/azureuser/pos-chain/geth --http --http.api=eth,net,web3 --http.addr=0.0.0.0 --http.corsdomain=* --ws --ws.api=eth,net,web3 --ws.addr=0.0.0.0 --ws.origins=* --authrpc.vhosts=* --authrpc.addr=0.0.0.0 --authrpc.jwtsecret=/home/azureuser/pos-chain/execution/jwtsecret --datadir=/home/azureuser/pos-chain/execution --allow-insecure-unlock --unlock=0x123463a4b065722e99115d6c222f267d9cabb524 --password=/home/azureuser/pos-chain/execution/geth_password.txt --nodiscover --syncmode=full --nat extip:4.240.105.79
 KillMode=process
 KillSignal=SIGINT
 TimeoutStopSec=90
